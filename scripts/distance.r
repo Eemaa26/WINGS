@@ -7,11 +7,17 @@
   require(maptools)
   require(sp)
   require(xlsx)
+  require(plyr)
 
 # import
   #shp.district <- readShapeSpatial("input/spatial/shapefiles/district/district.shp")
   villages <- read.csv("input/spatial/villages.csv")
   villages <- villages[order(villages$SiteID),]  # sort
+  tc <- read.csv("input/spatial/tradingcenters.csv")
+# add "tc" to trading centers
+  tc$TC <- paste(tc$TC, "tc", sep=".")
+# append trading centers to sites
+  villages <- rbind.fill(villages, tc)
 # subset coordinates
   ll <- c("Longitude", "Latitude")
   coords <- villages[ll]
