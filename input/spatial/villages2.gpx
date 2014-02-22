@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+ <trk>
+  <trkseg>
+   <trkpt lat="2.610638889" lon="32.37827778">
+   <time>2014-02-05T17:58:00Z</time>
+   </trkpt>
+  </trkseg>
+ </trk>
+<wpt lat="2.610638889" lon="32.37827778"><name>Akeca</name></wpt>
+<wpt lat="2.632305556" lon="32.41952778"><name>Keto</name></wpt>
+<wpt lat="2.629722222" lon="32.37027778"><name>Atyang</name></wpt>
+<wpt lat="2.657777778" lon="32.415"><name>Labuje</name></wpt>
+<wpt lat="2.635555556" lon="32.35694444"><name>Lagwedola</name></wpt>
+<wpt lat="2.6795" lon="32.41325"><name>Lamin Opabo</name></wpt>
+<wpt lat="2.666111111" lon="32.41297222"><name>Te Opok</name></wpt>
+<wpt lat="2.550833333" lon="32.4375"><name>Abura Amwonya</name></wpt>
+<wpt lat="2.528055556" lon="32.42722222"><name>Bur Kweyo</name></wpt>
+<wpt lat="2.551222222" lon="32.41402778"><name>Obir</name></wpt>
+<wpt lat="2.540416667" lon="32.4275"><name>Ocok Can</name></wpt>
+<wpt lat="2.551194444" lon="32.41408333"><name>Olula</name></wpt>
+<wpt lat="2.537916667" lon="32.41647222"><name>Te ilwa</name></wpt>
+<wpt lat="2.590833333" lon="32.43888889"><name>Laboromor</name></wpt>
+<wpt lat="2.580694444" lon="32.45466667"><name>Lwala </name></wpt>
+<wpt lat="2.608888889" lon="32.47444444"><name>Opit</name></wpt>
+<wpt lat="2.577888889" lon="32.42722222"><name>Wii Atoo</name></wpt>
+<wpt lat="2.574138889" lon="32.42194444"><name>Wii Gweng</name></wpt>
+<wpt lat="2.687777778" lon="32.5625"><name>Abuturu</name></wpt>
+<wpt lat="2.671388889" lon="32.55694444"><name>Agwari</name></wpt>
+<wpt lat="2.632944444" lon="32.52044444"><name>Lagude</name></wpt>
+<wpt lat="2.629694444" lon="32.51169444"><name>Lamin Lyeka</name></wpt>
+<wpt lat="2.634944444" lon="32.55155556"><name>Lugung</name></wpt>
+<wpt lat="2.632138889" lon="32.57155556"><name>Opwach</name></wpt>
+<wpt lat="2.635" lon="32.55155556"><name>Otal</name></wpt>
+<wpt lat="2.698333333" lon="32.53825"><name>Latinyer</name></wpt>
+<wpt lat="2.75025" lon="32.54772222"><name>Loyo Ajonga</name></wpt>
+<wpt lat="2.690166667" lon="32.53391667"><name>Omokokitunge</name></wpt>
+<wpt lat="2.605833333" lon="32.59138889"><name>Ayomlony</name></wpt>
+<wpt lat="2.606111111" lon="32.62388889"><name>Lamin Onami</name></wpt>
+<wpt lat="2.710833333" lon="32.58194444"><name>Ocim</name></wpt>
+<wpt lat="2.6475" lon="32.60516667"><name>Wanglobo</name></wpt>
+<wpt lat="2.686527778" lon="32.44730556"><name>Adak</name></wpt>
+<wpt lat="2.732222222" lon="32.48111111"><name>Ingula</name></wpt>
+<wpt lat="2.699194444" lon="32.47213889"><name>Lakwaya</name></wpt>
+<wpt lat="2.662722222" lon="32.46877778"><name>Awat Lela</name></wpt>
+<wpt lat="2.615" lon="32.47722222"><name>Opit Lower Center</name></wpt>
+<wpt lat="2.650722222" lon="32.47208333"><name>Te Store</name></wpt>
+<wpt lat="2.688833333" lon="32.66016667"><name>Acet Central</name></wpt>
+<wpt lat="2.791111111" lon="32.62972222"><name>Layoko</name></wpt>
+<wpt lat="2.712777778" lon="32.69641667"><name>Lukoto</name></wpt>
+<wpt lat="2.700138889" lon="32.60758333"><name>Omuny Jubi</name></wpt>
+<wpt lat="2.738416667" lon="32.61655556"><name>Ora Pwoyo</name></wpt>
+<wpt lat="2.684972222" lon="32.64319444"><name>Romkituku</name></wpt>
+<wpt lat="2.777333333" lon="32.66480556"><name>Te Aceng</name></wpt>
+<wpt lat="2.684972222" lon="32.78480556"><name>Ajan</name></wpt>
+<wpt lat="2.645111111" lon="32.79275"><name>Akoyo</name></wpt>
+<wpt lat="2.62875" lon="32.81341667"><name>Aromo</name></wpt>
+<wpt lat="2.650361111" lon="32.779"><name>Awali</name></wpt>
+<wpt lat="2.618888889" lon="32.78422222"><name>Awali Wanglobo</name></wpt>
+<wpt lat="2.623138889" lon="32.74661111"><name>Dino</name></wpt>
+<wpt lat="2.660861111" lon="32.65366667"><name>Bar Olam</name></wpt>
+<wpt lat="2.608055556" lon="32.6775"><name>Ogwari</name></wpt>
+<wpt lat="2.665" lon="32.69777778"><name>Oratido</name></wpt>
+<wpt lat="2.626861111" lon="32.62055556"><name>Oryang</name></wpt>
+<wpt lat="2.723638889" lon="32.72863889"><name>Lakim</name></wpt>
+<wpt lat="2.693694444" lon="32.69388889"><name>Lamur Oratido</name></wpt>
+<wpt lat="2.682638889" lon="32.72655556"><name>Odek</name></wpt>
+<wpt lat="2.693611111" lon="32.69361111"><name>Olam</name></wpt>
+<wpt lat="2.693055556" lon="32.69388889"><name>Opong Goga</name></wpt>
+<wpt lat="3.397666667" lon="33.36527778"><name>Kalabong Central</name></wpt>
+<wpt lat="3.394083333" lon="33.35388889"><name>Kalabong West</name></wpt>
+<wpt lat="3.372611111" lon="33.38538889"><name>Masese</name></wpt>
+<wpt lat="3.360183333" lon="33.33756667"><name>Kako</name></wpt>
+<wpt lat="3.371583333" lon="33.32526667"><name>Kweyo</name></wpt>
+<wpt lat="3.348055556" lon="33.32869444"><name>Ladwogi</name></wpt>
+<wpt lat="3.369888889" lon="33.26908333"><name>Logum A</name></wpt>
+<wpt lat="3.372638889" lon="33.24986111"><name>Onyala</name></wpt>
+<wpt lat="3.28805" lon="33.35448333"><name>Agot Agot</name></wpt>
+<wpt lat="3.294083333" lon="33.36281667"><name>Bajere</name></wpt>
+<wpt lat="3.313916667" lon="33.38308333"><name>Guda</name></wpt>
+<wpt lat="3.334444444" lon="33.31747222"><name>Boroboro</name></wpt>
+<wpt lat="3.317555556" lon="33.29027778"><name>Lapana</name></wpt>
+<wpt lat="3.346555556" lon="33.33525"><name>Oryang</name></wpt>
+<wpt lat="3.258333333" lon="33.16444444"><name>Abaka Dyel</name></wpt>
+<wpt lat="3.2425" lon="33.18094444"><name>Akobi Olwoch</name></wpt>
+<wpt lat="3.258388889" lon="33.15405556"><name>Gwokongwee West</name></wpt>
+<wpt lat="3.249472222" lon="33.14761111"><name>Lagampir</name></wpt>
+<wpt lat="3.242444444" lon="33.181"><name>Tee-Odong</name></wpt>
+<wpt lat="3.209616667" lon="33.30018333"><name>Kalele</name></wpt>
+<wpt lat="3.2559" lon="33.23071667"><name>Katoplak</name></wpt>
+<wpt lat="3.24025" lon="33.25853333"><name>Kumele Wicere</name></wpt>
+<wpt lat="3.249016667" lon="33.27951667"><name>Lanyap</name></wpt>
+<wpt lat="3.20715" lon="33.28996667"><name>Ogili</name></wpt>
+<wpt lat="3.232527778" lon="33.21919444"><name>Laraka</name></wpt>
+<wpt lat="3.28615" lon="33.19115"><name>Lwala Village</name></wpt>
+<wpt lat="3.233816667" lon="33.22068333"><name>Mota Central</name></wpt>
+<wpt lat="3.254266667" lon="33.19888333"><name>Obwore East</name></wpt>
+<wpt lat="3.301666667" lon="33.16311667"><name>Orabonyo</name></wpt>
+<wpt lat="3.298083333" lon="33.20144444"><name>Barongwe</name></wpt>
+<wpt lat="3.267888889" lon="33.21072222"><name>Kweyo</name></wpt>
+<wpt lat="3.285194444" lon="33.22994444"><name>Lamodyak</name></wpt>
+<wpt lat="3.315111111" lon="33.19777778"><name>Latuturu</name></wpt>
+<wpt lat="3.3279" lon="33.266"><name>Loka-Olet</name></wpt>
+<wpt lat="3.306016667" lon="33.24863333"><name>Puyuda</name></wpt>
+<wpt lat="3.526527778" lon="33.58344444"><name>Labolo</name></wpt>
+<wpt lat="3.26645" lon="33.20735"><name>Lochim</name></wpt>
+<wpt lat="3.450033333" lon="33.65226667"><name>Locomo Central</name></wpt>
+<wpt lat="3.44505" lon="33.55038333"><name>Bilayolo</name></wpt>
+<wpt lat="3.4653" lon="33.55916667"><name>Lokungu</name></wpt>
+<wpt lat="3.4384" lon="33.53815"><name>Olaya</name></wpt>
+<wpt lat="3.535583333" lon="33.46480556"><name>Apimotur</name></wpt>
+<wpt lat="3.540861111" lon="33.46580556"><name>Goona</name></wpt>
+<wpt lat="3.488777778" lon="33.41147222"><name>Lalekan Central</name></wpt>
+<wpt lat="3.493766667" lon="33.47791667"><name>Lokongera</name></wpt>
+<wpt lat="3.400472222" lon="33.43575"><name>Palobar A</name></wpt>
+<wpt lat="3.540805556" lon="33.46580556"><name>Tegot Kalabong</name></wpt>
+<wpt lat="3.399638889" lon="33.46930556"><name>Kona</name></wpt>
+<wpt lat="3.391133333" lon="33.52936667"><name>Lapeitak</name></wpt>
+<wpt lat="3.398888889" lon="33.46891667"><name>Lenga Central</name></wpt>
+<wpt lat="3.371716667" lon="33.52025"><name>Ringilil</name></wpt>
+<wpt lat="3.367722222" lon="33.40947222"><name>Ceylon West</name></wpt>
+<wpt lat="3.364638889" lon="33.52397222"><name>Kamanding</name></wpt>
+<wpt lat="3.387472222" lon="33.46819444"><name>Labwomor</name></wpt>
+<wpt lat="3.370555556" lon="33.51263889"><name>Logerema</name></wpt>
+<wpt lat="3.363138889" lon="33.52230556"><name>Madi Opei</name></wpt>
+<wpt lat="3.554277778" lon="33.48644444"><name>Akilok Central</name></wpt>
+<wpt lat="3.618305556" lon="33.53938889"><name>Kolopire</name></wpt>
+<wpt lat="3.610638889" lon="33.54266667"><name>Lokom Central</name></wpt>
+<wpt lat="3.619416667" lon="33.53225"><name>Pudpud</name></wpt>
+
+</gpx>

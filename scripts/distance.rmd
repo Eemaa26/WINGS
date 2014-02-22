@@ -1,0 +1,96 @@
+WINGS spatial
+========================================================
+
+Here we import spatial coordinates of all 120 WINGS villages (i) and calculate a euclidian distance matrix. Then we contruct a gravity index (see [here](http://cityform.mit.edu/files/UNA_help_v1_1.pdf)) that measures the influence of treatment villages on i. This index is proportional to the weight of the surrounding villages (j) and inversely proportional to the straight line distances between i and j. 
+
+### Setup
+
+```{rsetup, warning=FALSE, message=FALSE, tidy=FALSE}
+# libraries
+  require(knitr)
+  require(maptools)
+  require(sp)
+  require(xlsx)
+  require(plyr)
+# knitr options
+  opts_knit$set(root.dir=normalizePath('../'))
+  opts_chunk$set(warning=FALSE, message=FALSE, tidy=FALSE)
+```
+### Import
+```{r import}
+  #shp.district <- readShapeSpatial("input/spatial/shapefiles/district/district.shp")
+  villages <- read.csv("input/spatial/villages.csv")
+  villages <- villages[order(villages$SiteID),]  # sort
+  tc <- read.csv("input/spatial/tradingcenters.csv")
+```
+
+### Calculate village-to-village distance matrix
+```{r dist-mat-village}
+# subset coordinates
+  ll <- c("Longitude", "Latitude")
+  coords <- villages[ll]
+# calculate distance in km
+  dist <- apply(coords, 1, 
+                function(eachPoint) spDistsN1(as.matrix(coords),
+                                              eachPoint, longlat=TRUE))
+  dist <- data.frame(dist)
+  names(dist) <- villages$SiteID
+  row.names(dist) <- villages$SiteID
+# export
+  write.xlsx(x = dist, file = "output/distance.xlsx",
+             sheetName = "villages", row.names = TRUE)
+```
+
+### Calculate village-to-trading center distance matrix
+```{r dist-mat-tc}
+# add "tc" to trading centers
+  tc$TC <- paste(tc$TC, "tc", sep=".")
+# append trading centers to sites
+  villages.tc <- rbind.fill(villages, tc)
+# subset coordinates
+  ll <- c("Longitude", "Latitude")
+  coords <- villages.tc[ll]
+# calculate distance in km
+  dist.vtc <- apply(coords, 1, 
+                    function(eachPoint) spDistsN1(as.matrix(coords),
+                                                  eachPoint, longlat=TRUE))
+  dist.vtc <- data.frame(dist.vtc)
+  names(dist.vtc) <- villages.tc$SiteID
+  row.names(dist.vtc) <- villages.tc$SiteID
+# limit cols to TCs and rows to villages
+  dist.vtc <- dist.vtc[,-c(1:120)]
+  dist.vtc <- dist.vtc[1:120,]
+# export
+  write.xlsx(x = dist.vtc, file = "output/distance.xlsx",
+             sheetName = "tc", row.names = TRUE,
+             append=TRUE)
+```
+
+### Calculate gravity index
+
+By dividing the weight of surrounding village j by the exponent of the distance between j and i, we assume that the inverse effect of distance decreases exponentially. By first multiplying distances by 0.1813, we modify the shape of the distance decay in a manner that assumes walking is the main mode of travel. We include all j's when constructing the index; no maximum search radius is used. We do not weight according to village population.
+
+```{r gravity}
+# convert data frame to matrix
+  dist.mat <- data.matrix(dist)
+# columns will be village-specific vectors of attraction to every other village
+# showing here distance matrix for villages 1-6
+  head(dist.mat[,1:6])
+# create treatment weight matrix
+  p1 <- villages$phase_1
+  p1
+# village 1 is a treatment village
+# village 2 is a control village and has weight of 0 on other villages
+  dist.mat.w <- (dist.mat*p1)/dist.mat
+  head(dist.mat.w[,1:6])
+# weight by inverse distance 
+#   From http://cityform.mit.edu/files/UNA_help_v1_1.pdf:
+#   "The inverse effect of distance specified in the Gravity index decreases exponentially. The exact shape of the distance decay can be controlled with the exponent and the corresponding shape of distance decay should be derived from the assumed mode of travel; for walking measured in “minutes”, for instance, researchers have found to fall around 0.1813 (Handy and Niemeier 1997). 
+  grav.mat <- dist.mat.w/exp(dist.mat*.1813)
+  grav.mat[grav.mat==Inf] <- 0
+  head(grav.mat[,1:6])
+# sum columns
+  gravity <- colSums(grav.mat, na.rm = TRUE)
+  gravity
+  hist(gravity)
+```
